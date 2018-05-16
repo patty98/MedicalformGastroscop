@@ -1,0 +1,116 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000" Loaded="Window_Loaded" FontSize="24">
+    <ScrollViewer HorizontalScrollBarVisibility="Visible">
+        <Grid Loaded="Grid_Loaded" HorizontalAlignment="Left">
+            <Menu Height="25" VerticalAlignment="Top">
+                <MenuItem Header="File">
+                    <MenuItem Header="Изменить Ф.И.О. врача" Click="MenuItem_Click" ></MenuItem>
+                  
+                    <MenuItem Header="Exit" ></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Edit" ></MenuItem>
+            </Menu>
+            <TextBox HorizontalAlignment="Left" Height="60" Margin="297,35,0,0" TextWrapping="Wrap" Text="Эзофагогастродуоденоскопия" VerticalAlignment="Top" Width="477" FontSize="24" FontWeight="Bold"/>
+            <Label Name="Machine" Content="Аппарат" HorizontalAlignment="Left" Margin="30,164,0,0" VerticalAlignment="Top" Width="140" FontSize="20"/>
+            <ComboBox x:Name="combobox1"  HorizontalAlignment="Left" Margin="242,178,0,0" VerticalAlignment="Top" Width="669" Height="35" SelectionChanged="ComboBox_SelectionChanged"/>
+            <TextBox Name="Patient" HorizontalAlignment="Left" Height="45" Margin="251,228,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="528" RenderTransformOrigin="0.5,0.5">
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.452"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+            </TextBox>
+            <Label Content="Ф.И.О." HorizontalAlignment="Left" Margin="33,239,0,0" VerticalAlignment="Top" Width="125" RenderTransformOrigin="0.467,1.762" Height="41" FontSize="20"/>
+            <Label Content="Возраст" HorizontalAlignment="Left" Margin="33,304,0,0" VerticalAlignment="Top" Width="103" FontSize="20"/>
+            <TextBox Name="Age" HorizontalAlignment="Left" Height="34" Margin="242,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+            <Label Content="лет" HorizontalAlignment="Left" Margin="410,307,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" FontSize="20">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.498"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Label Content="Дата исследования" HorizontalAlignment="Left" Margin="33,377,0,0" VerticalAlignment="Top" Width="200" FontSize="20"/>
+            <TextBox Name="Date" HorizontalAlignment="Left" Margin="250,377,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Height="26" Width="150" FontSize="12"/>
+            <Label Content="Анестезия" HorizontalAlignment="Left" Margin="38,424,0,0" VerticalAlignment="Top" Width="86" FontSize="20"/>
+            <ComboBox Name="combobox2" HorizontalAlignment="Left" Margin="242,424,0,0" VerticalAlignment="Top" Width="669" Height="35"/>
+            <Label Content="Описание:" HorizontalAlignment="Left" Margin="38,518,0,0" VerticalAlignment="Top" Width="467" FontWeight="Bold"/>
+            <Label Content="Пищевод" HorizontalAlignment="Left" Margin="332,565,0,0" VerticalAlignment="Top" Width="173" Height="48" RenderTransformOrigin="0.593,0.399"/>
+            <Label Content="Пищевод" HorizontalAlignment="Left" Margin="39,645,0,0" VerticalAlignment="Top" FontSize="16" Width="209"/>
+            <ComboBox x:Name="combobox3" HorizontalAlignment="Left" Margin="202,636,0,0" VerticalAlignment="Top" Width="198" Height="35"/>
+            <Label Content="Стенки" HorizontalAlignment="Left" Margin="39,712,0,0" VerticalAlignment="Top" FontSize="16" Width="76"/>
+            <ComboBox x:Name="combobox4" HorizontalAlignment="Left" Margin="202,712,0,0" VerticalAlignment="Top" Width="198" Height="35"/>
+            <Label Content="Слизистая" HorizontalAlignment="Left" Margin="40,773,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <ComboBox Name="combobox5" HorizontalAlignment="Left" Margin="202,790,0,0" VerticalAlignment="Top" Width="198" Height="35"/>
+            <ComboBox Name="combobox6" HorizontalAlignment="Left" Margin="440,790,0,0" VerticalAlignment="Top" Width="185" Height="35"/>
+            <Label Content="Z линия" HorizontalAlignment="Left" Margin="40,840,0,0" VerticalAlignment="Top" FontSize="16" Width="75"/>
+            <ComboBox Name="combobox7" HorizontalAlignment="Left" Margin="202,840,0,0" VerticalAlignment="Top" Width="198" Height="35"/>
+            <ComboBox Name="combobox8" HorizontalAlignment="Left" Margin="440,840,0,0" VerticalAlignment="Top" Width="185" Height="26"/>
+            <Label Content="Кардия" HorizontalAlignment="Left" Margin="38,904,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <ComboBox Name="combobox9" HorizontalAlignment="Left" Margin="202,897,0,0" VerticalAlignment="Top" Width="198" Height="35"/>
+            <TextBox Name="Sm" HorizontalAlignment="Left" Height="26" Margin="594,903,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="52" FontSize="16"/>
+            <Label Content="Расположена на " HorizontalAlignment="Left" Margin="440,893,0,0" VerticalAlignment="Top" Width="127" FontSize="16"/>
+            <Label Content="см" HorizontalAlignment="Left" Margin="676,897,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="1.115,0.201"/>
+            <Label Content="В инверсии эндоскоп" HorizontalAlignment="Left" Margin="10,955,0,0" VerticalAlignment="Top" FontSize="16" Width="187"/>
+            <ComboBox Name="combobox10" HorizontalAlignment="Left" Margin="202,955,0,0" VerticalAlignment="Top" Width="120" Height="35"/>
+            <Label Content="охватывается кардией" HorizontalAlignment="Left" Margin="440,950,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <TextBox Name="Comment1" AcceptsReturn="True" HorizontalAlignment="Left" Height="33" Margin="251,1007,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="528" RenderTransformOrigin="0.5,0.5"/>
+            <Label Content="Желудок" HorizontalAlignment="Left" Margin="332,1068,0,0" VerticalAlignment="Top" FontSize="24" Width="141"/>
+           
+            <Label Content="Просвет желудка" HorizontalAlignment="Left" Margin="33,1110,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <ComboBox Name="combobox11" HorizontalAlignment="Left" Margin="202,1110,0,0" VerticalAlignment="Top" Width="604" Height="35"/>
+            <Label Content="В просвете" HorizontalAlignment="Left" Margin="33,1171,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <ComboBox Name="combobox12" HorizontalAlignment="Left" Margin="202,1171,0,0" VerticalAlignment="Top" Width="604" Height="35"/>
+            <Label Content="Складки" HorizontalAlignment="Left" Margin="40,1230,0,0" VerticalAlignment="Top" FontSize="16"/>
+            <ComboBox Name="combobox13" HorizontalAlignment="Left" Margin="202,1230,0,0" VerticalAlignment="Top" Width="238" Height="35"/>
+
+            <Label Content="воздухом расправляются " HorizontalAlignment="Left" Margin="445,1230,0,0" VerticalAlignment="Top" FontSize="16" Width="240"/>
+            <ComboBox Name="combobox14" HorizontalAlignment="Left" Margin="700,1230,0,0" VerticalAlignment="Top" Width="238" Height="35"/>
+            <Label Content="Слизистая" HorizontalAlignment="Left" Margin="39,1292,0,0" VerticalAlignment="Top" FontSize="16" Width="209"/>
+            <ComboBox Name="combobox15" HorizontalAlignment="Left" Margin="200,1292,0,0" VerticalAlignment="Top" Width="238" Height="35"/>
+            <Label Content="Подслизистый сосудистый желудок" HorizontalAlignment="Left" Margin="39,1354,0,0" VerticalAlignment="Top" FontSize="16" Width="400"/>
+            <ComboBox Name="combobox16" HorizontalAlignment="Left" Margin="435,1354,0,0" VerticalAlignment="Top" Width="400" Height="35"/>
+            <Label Content="Перистальтик" HorizontalAlignment="Left" Margin="39,1410,0,0" VerticalAlignment="Top" FontSize="16" Width="300"/>
+            <ComboBox Name="combobox17" HorizontalAlignment="Left" Margin="435,1410,0,0" VerticalAlignment="Top" Width="400" Height="35"/>
+            <Label Content="Привратник" HorizontalAlignment="Left" Margin="39,1480,0,0" VerticalAlignment="Top" FontSize="16" Width="209"/>
+
+            <ComboBox Name="combobox18" HorizontalAlignment="Left" Margin="242,1480,0,0" VerticalAlignment="Top" Width="400" Height="35"/>
+            <Label Content="формы " HorizontalAlignment="Left" Margin="680,1480,0,0" VerticalAlignment="Top" FontSize="16" Width="209"/>
+            <ComboBox Name="combobox19" HorizontalAlignment="Left" Margin="850,1480,0,0" VerticalAlignment="Top" Width="400" Height="35"/>
+            <Label Content="Двенадцатиперстная кишка" HorizontalAlignment="Left" Margin="332,1545,0,0" VerticalAlignment="Top" Width="350" Height="48" RenderTransformOrigin="0.593,0.399"/>
+            <Label Content="Луковица ДПК" HorizontalAlignment="Left" Margin="40,1607,0,0" VerticalAlignment="Top" FontSize="16" Width="209"/>
+            <ComboBox Name="combobox20" HorizontalAlignment="Left" Margin="250,1607,0,0" VerticalAlignment="Top" Width="400" Height="35" />
+            <Label Content="Слизистая" HorizontalAlignment="Left" Margin="40,1668,0,0" VerticalAlignment="Top" FontSize="16" Width="250" />
+            <ComboBox Name="combobox21" HorizontalAlignment="Left" Margin="310,1668,0,0" VerticalAlignment="Top" Width="400" Height="35"/>
+            <ComboBox Name="combobox22" HorizontalAlignment="Left" Margin="780,1668,0,0" VerticalAlignment="Top" Width="400" Height="35"/>
+            <TextBox Name="Comment2" AcceptsReturn="True" HorizontalAlignment="Left" Height="42" Margin="250,1738,0,0" VerticalAlignment="Top" Width="639" />
+
+            <Label Content="Пойбульбарные отделы ДПК" HorizontalAlignment="Left" Margin="332,1798,0,0" VerticalAlignment="Top" Width="260" Height="48" RenderTransformOrigin="0.593,0.399"/>
+            <Label Content="Слизистая" HorizontalAlignment="Left" Margin="40,1852,0,0" VerticalAlignment="Top" FontSize="16" Width="300"/>
+            <ComboBox Name="combobox23" HorizontalAlignment="Left" Margin="370,1852,0,0" VerticalAlignment="Top" Width="400" Height="35"/>
+            <Label Content="В просвете желчь" HorizontalAlignment="Left" Margin="40,1912,0,0" VerticalAlignment="Top" FontSize="16" Width="250"/>
+            <ComboBox Name="combobox24" HorizontalAlignment="Left" Margin="320,1912,0,0" VerticalAlignment="Top" Width="400" Height="35"/>
+            <Label Content="Область БДС" HorizontalAlignment="Left" Margin="40,1976,0,0" VerticalAlignment="Top" FontSize="16" Width="250"/>
+            <ComboBox Name="combobox25" HorizontalAlignment="Left" Margin="320,1976,0,0" VerticalAlignment="Top" Width="400" Height="35"/>
+            <TextBox Name="Comment3" AcceptsReturn="True" HorizontalAlignment="Left" Height="26" Margin="250,2045,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="600" FontSize="16"/>
+            <Label Content="Заключение" HorizontalAlignment="Left" Margin="40,2100,0,0" VerticalAlignment="Top" FontSize="16" Width="209"/>
+            <TextBox Name="Conclusion" AcceptsReturn="True" HorizontalAlignment="Left" Height="26" Margin="289,2100,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="600" FontSize="16"/>
+            <Button Content="Save" Name="Save" HorizontalAlignment="Left" Height="45" Margin="289,2162,0,0" Width="100" Click="Save_Click"/>
+            <Label Content="Ф.И.О. врача" HorizontalAlignment="Left" Margin="20,117,0,0" VerticalAlignment="Top"/>
+            <TextBox Name="name" HorizontalAlignment="Left" Height="42" Margin="250,117,0,0" VerticalAlignment="Top" Width="639" TextChanged="TextBox_TextChanged_1"/>
+       
+        </Grid>
+    </ScrollViewer>
+</Window>

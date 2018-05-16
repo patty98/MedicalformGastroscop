@@ -1,0 +1,48 @@
+D:\projects VS c++\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe.config
+D:\projects VS c++\WpfApp1\WpfApp1\bin\Debug\WpfApp1.exe
+D:\projects VS c++\WpfApp1\WpfApp1\bin\Debug\WpfApp1.pdb
+D:\projects VS c++\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojResolveAssemblyReference.cache
+D:\projects VS c++\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+D:\projects VS c++\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+D:\projects VS c++\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+D:\projects VS c++\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+D:\projects VS c++\WpfApp1\WpfApp1\obj\Debug\MainWindow.baml
+D:\projects VS c++\WpfApp1\WpfApp1\obj\Debug\WpfApp1.g.resources
+D:\projects VS c++\WpfApp1\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+D:\projects VS c++\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+D:\projects VS c++\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+D:\projects VS c++\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe
+D:\projects VS c++\WpfApp1\WpfApp1\obj\Debug\WpfApp1.pdb
+D:\гид\MedicalformGastroscop\WpfApp1\bin\Debug\WpfApp1.exe.config
+D:\гид\MedicalformGastroscop\WpfApp1\bin\Debug\WpfApp1.exe
+D:\гид\MedicalformGastroscop\WpfApp1\bin\Debug\WpfApp1.pdb
+D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\WpfApp1.csprojResolveAssemblyReference.cache
+D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\MainWindow.g.cs
+D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\App.g.cs
+D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\MainWindow.baml
+D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\WpfApp1.g.resources
+D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\WpfApp1.exe
+D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\WpfApp1.pdb
+D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\Interop.LCC11.dll
+D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\WpfApp1.csproj.ResolveComReference.cache
+D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\obj\Debug\WpfApp1.csproj.ResolveComReference.cache
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\obj\Debug\App.g.cs
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\Lavrentiy\Documents\GitHub\new-rep\WpfApp1\obj\Debug\WpfApp1.pdb
