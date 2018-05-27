@@ -14,17 +14,170 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Word = Microsoft.Office.Interop.Word;
+
+/**
+
+	@author Lavrentiy Leonov,Beskrovnaya Lina
+	@version 1.0
+	@date April-May 2018
+*/
 namespace WpfApp1
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Класс MainWindow
+    /// </summary>
+
+    /// <remarks>
+    /// Создаем глобальные переменные 
+    /// </remarks>
+    /// \n path строковая переменная для пути к файлу с именем врачей
+    /// \n data[] массив для данных, введенных пользователем
+    /// <summary>
+    /// <see cref="Data()">
+    /// </see>
+    /// Функция Data() для заполнения массива данныых data значениями из грида, котрые выбрал пользователь
+    /// </summary>
+    /// i-счетчик
+    /// <exception cref="Exeption ex"> возникает, когда человек не ввел все данные в ячейки
+    /// </exception>
+    /// <summary>
+    /// \n Стандартная функция Window_Loaded, вызывающаяся, когда загружается окно MainWindow
+    /// \n Добавляются вручную элементы в Combobox, котрые будут доступны для выбора пользователю
+    ///\n Данные берем из советов опытного врача, они достоверны.
+    /// \n Для сохранения и дальнейшего изменения имени врача в документе будет использвоать текстовый документ, в котором будут хранится Ф.И.О. врачей
+    /// </summary>
+    /// <summary>
+    /// Считывание с файла имя врача
+    /// \n StreamReader sr = new StreamReader(fs);
+    /// \n name1= sr.ReadLine();
+    ///  \n if(String.IsNullOrEmpty(name1)||name1==" "!=true)
+    ///  </summary>
+    /// <summary>
+    ///Считывание из файла имя врача
+    ///
+    ///   \n name.Text = name1;
+    ///   \n name.IsEnabled = false;-При успешном считывании из файла делаем ячейку для ввода имени врача затемненной и без функционала
+    ///  \n}
+    /// \n else
+    /// \n {
+    /// \n     name.IsEnabled = true;-При неуспешном считывании из файла делаем ячейку активной для ввода-
+    /// \n}
+    ///  \nsr.Close(); 
+    ///\n}
+    /// </summary>
+    ///  <summary> 
+    /// \n Функция TextBox_TextChanged_1( при активации текстовог поля для ввода имени врача
+    ///  </summary>
+    ///  \nДанная функция сохраняет имя, введенное пользователем в ячейку в переменную name1 и вызывает дальше фнукцию для сохранения этого имени в файл.
+
+    /// <summary>
+    ///Код функции выглядит следующим образом:\n
+    ///
+    ///private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)\n
+    ///  {\n
+    ///    if (String.IsNullOrEmpty(name1) || name1 == " " == true)\n
+    ///  {\n
+    ///       name1 = name.Text;\n
+    ///      SaveName();\n
+    ///  }\n
+    ///   }\n
+    /// </summary> 
+    /// <summary>
+    ///Фнукция SaveName() сохранения мени врача в файл
+    /// Данная функция реализует открытие файла, сохранение данных имени в файл и закрытие файла.\n
+    ///Код функции выглядит следующим образом:\n
+    ///  private void SaveName()\n
+    ///   {\n
+    ///   FileStream fr = new FileStream(path + "\\namedoc.txt", FileMode.OpenOrCreate, FileAccess.Write);\n
+    ///   StreamWriter sw = new StreamWriter(fr);\n
+    ///     sw.WriteLine(name1);\n
+    ///
+    ///        sw.Close();    \n
+    ///   }\n
+    /// </summary>
+    ///  <summary>
+    /// Событие нажатия на меню  MenuItem_Click\n
+    /// </summary>
+    /// <summary>
+    /// Активизирует ячейку для ввода имени врача, позволяя вписать другое имя\n
+    /// </summary>
+    /// <summary>
+    /// Код функции:
+    /// </summary>
+    /// <summary>
+    /// private void Save_Click(object sender, RoutedEventArgs e)\n
+    /// {\n
+    ///  Data();\n
+    /// Word.Document doc = null;\n
+    ///  try\n
+    /// {\n
+    ///
+    /// Word.Application app = new Word.Application();\n
+    ///
+    ///string source = @"D:\\Doctor.docx";\n
+    /// doc = app.Documents.Open(source);\n
+    ///doc.Activate();\n
+    /// Word.Bookmarks wBookmarks = doc.Bookmarks;\n
+    /// Word.Range wRange;\n
+    /// int i = 0;\n
+    ///    foreach (Word.Bookmark mark in wBookmarks)\n
+    ///  {\n
+    /// wRange = mark.Range;\n
+    /// wRange.Text = data[i];\n
+    /// i++;\n
+    /// }\n
+    ///  Object fileName = @"D:\\"+Patient.Text+".doc";\n
+    ///  Object fileFormat = Word.WdSaveFormat.wdFormatDocument;\n
+    ///Object lockComments = false;\n
+    /// Object password = "";\n
+    ///Object addToRecentFiles = false;\n
+    /// Object writePassword = "";\n
+    /// Object readOnlyRecommended = false;\n
+    /// Object embedTrueTypeFonts = false;\n
+    ///  Object saveNativePictureFormat = false;\n
+    /// Object saveFormsData = false;\n
+    /// Object saveAsAOCELetter = Type.Missing;\n
+    /// Object encoding = Type.Missing;\n
+    /// Object insertLineBreaks = Type.Missing;\n
+    /// Object allowSubstitutions = Type.Missing;\n
+    /// Object lineEnding = Type.Missing;\n
+    /// Object addBiDiMarks = Type.Missing;\n
+    ///doc.SaveAs(ref fileName,\n
+    ///  ref fileFormat, ref lockComments,\n
+    /// ref password, ref addToRecentFiles, ref writePassword,\n
+    /// ref readOnlyRecommended, ref embedTrueTypeFonts,\n
+    ///ref saveNativePictureFormat, ref saveFormsData,\n
+    /// ref saveAsAOCELetter, ref encoding, ref insertLineBreaks,\n
+    /// ref allowSubstitutions, ref lineEnding, ref addBiDiMarks);\n
+    /// doc.Close();\n
+    ///  doc = null;\n
+    /// }\n
+    ///    catch (Exception ex)\n
+    ///   {\n
+    ///doc.Close();\n
+    ///  doc = null;\n
+    /// Console.WriteLine("Во время выполнения произошла ошибка!");\n
+    ///  Console.ReadLine();\n
+    /// }\n
+    /// </summary>
+    /// <summary> 
+    ///Функция Save_Click вызывается по щелчку на кнопку Save в окнце документа\n
+    ///Сораняет данные, выбранные пользователем в документ Microsoft Word\n
+    ///1.Вызывает фнукцию Data() для сохранения всех введенных пользователем данных в массив data[].\n
+    ///2.Создает экземпляр Word.Document doc\n
+    ///3.Создает объект приложения Word.Application app = new Word.Application()\n
+    ///4.Открывает документ из введенной директории\n
+    ///5.Создает объект wBookmarks, который содержит все закладки\n
+    ///6.В цикле присваивает каждой закладке текст из массива данных пользваотеля data[]\n
+    ///7.Сохраняем в документ новый, именуем его Ф.И.О. пациента\n
+    ///8.Закрываем документ\n
     /// </summary>
     public partial class MainWindow : Window
     {
         string name1 = "";
         string path = Directory.GetCurrentDirectory();
-        int N = 35;
         string [] data=new string[35];
+        string newname = "";
         public MainWindow()
         {
             InitializeComponent();
@@ -41,6 +194,7 @@ namespace WpfApp1
             {
 
             }
+
         private void Data()
         {
             try
@@ -120,14 +274,16 @@ namespace WpfApp1
             }
            
         }
+        
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
-        { 
-          
+        {
             combobox1.Items.Add("Видеогастроскоп Olympus GIF H180J");
             combobox2.Items.Add("спрей 10% Sol Lidicaini");
             combobox3.Items.Add("свободно проходим");
             combobox3.Items.Add("сужен");
             combobox3.Items.Add("расширен");
+            combobox3.Items.Add("Добавить...");
             combobox4.Items.Add("эластичны");
             combobox4.Items.Add("регидны");
             combobox5.Items.Add("бледно-розовая");
@@ -183,7 +339,6 @@ namespace WpfApp1
             combobox25.Items.Add("не изменена");
             combobox25.Items.Add("изменена");
             FileStream fs = new FileStream(path + "\\namedoc.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
-         
             StreamReader sr = new StreamReader(fs);
             name1= sr.ReadLine();
             if(String.IsNullOrEmpty(name1)||name1==" "!=true)
@@ -195,7 +350,7 @@ namespace WpfApp1
             {
                 name.IsEnabled = true;
             }
-             sr.Close();
+            sr.Close();
         
         }
 
@@ -216,7 +371,7 @@ namespace WpfApp1
         {
         }
 
-
+   
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
             if (String.IsNullOrEmpty(name1) || name1 == " " == true)
@@ -225,6 +380,7 @@ namespace WpfApp1
                 SaveName();
             }
         }
+        
         private void SaveName()
         {
             FileStream fr = new FileStream(path + "\\namedoc.txt", FileMode.OpenOrCreate, FileAccess.Write);
@@ -235,54 +391,77 @@ namespace WpfApp1
             sw.Close();
             
         }
+        
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             name.IsEnabled = true;
             name1 = name.Text;
             SaveName();
         }
-
+        private void Exit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+        
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             Data();
             Word.Document doc = null;
             try
             {
-                // Создаём объект приложения
                 Word.Application app = new Word.Application();
-                // Путь до шаблона документа
-                string source = @"C:\\Users\\Lavrentiy\\Documents\\Doctor.docx";
-                // Открываем
-                doc = app.Documents.Open(source);
+             
+            //    string source = @"D:\\Doctor.docx";
+                doc = app.Documents.Open(path+ "\\Doctor.docx");
                 doc.Activate();
-
-                // Добавляем информацию
-                // wBookmarks содержит все закладки
                 Word.Bookmarks wBookmarks = doc.Bookmarks;
                 Word.Range wRange;
                 int i = 0;
-               
-                foreach (Word.Bookmark mark in wBookmarks)
-                {
 
+                foreach (Word.Bookmark mark in wBookmarks)
+                { 
                     wRange = mark.Range;
                     wRange.Text = data[i];
                     i++;
                 }
-
-                // Закрываем документ
+                Object fileName = @"D:\\"+Patient.Text+".doc";
+                Object fileFormat = Word.WdSaveFormat.wdFormatDocument;
+                Object lockComments = false;
+                Object password = "";
+                Object addToRecentFiles = false;
+                Object writePassword = "";
+                Object readOnlyRecommended = false;
+                Object embedTrueTypeFonts = false;
+                Object saveNativePictureFormat = false;
+                Object saveFormsData = false;
+                Object saveAsAOCELetter = Type.Missing;
+                Object encoding = Type.Missing;
+                Object insertLineBreaks = Type.Missing;
+                Object allowSubstitutions = Type.Missing;
+                Object lineEnding = Type.Missing;
+                Object addBiDiMarks = Type.Missing;
+                doc.SaveAs(ref fileName,
+ ref fileFormat, ref lockComments,
+ ref password, ref addToRecentFiles, ref writePassword,
+ ref readOnlyRecommended, ref embedTrueTypeFonts,
+ ref saveNativePictureFormat, ref saveFormsData,
+ ref saveAsAOCELetter, ref encoding, ref insertLineBreaks,
+ ref allowSubstitutions, ref lineEnding, ref addBiDiMarks);
                 doc.Close();
                 doc = null;
             }
             catch (Exception ex)
             {
-                // Если произошла ошибка, то
-                // закрываем документ и выводим информацию
                 doc.Close();
                 doc = null;
                 Console.WriteLine("Во время выполнения произошла ошибка!");
                 Console.ReadLine();
             }
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
     }

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="class_wpf_app1_1_1_app" kind="class"><name>WpfApp1::App</name>
+  </compound>
+  <compound refid="class_wpf_app1_1_1_main_window" kind="class"><name>WpfApp1::MainWindow</name>
+    <member refid="class_wpf_app1_1_1_main_window_1a1dbb1f1495e83a995a38fc71ae6567d6" kind="variable"><name>name1</name></member>
+    <member refid="class_wpf_app1_1_1_main_window_1aee7ad7ecea9c9aca9b23fb32a1cd1815" kind="variable"><name>path</name></member>
+    <member refid="class_wpf_app1_1_1_main_window_1aa3c6257e1760d1141664e45c9f49466e" kind="variable"><name>data</name></member>
+    <member refid="class_wpf_app1_1_1_main_window_1a114e0acb9b0b6367f97f8bff016cc4ac" kind="function"><name>MainWindow</name></member>
+    <member refid="class_wpf_app1_1_1_main_window_1a01c77f36de42e71f9bba2b1645234b7e" kind="function"><name>ComboBox_SelectionChanged</name></member>
+    <member refid="class_wpf_app1_1_1_main_window_1aeef4d7ef90bf0cc49f852a933893e1e9" kind="function"><name>Grid_Loaded</name></member>
+    <member refid="class_wpf_app1_1_1_main_window_1a6a70686ce82dc3be31813a52866d9c81" kind="function"><name>Data</name></member>
+    <member refid="class_wpf_app1_1_1_main_window_1a97f292f1c187c65108c7e57f12f38180" kind="function"><name>Window_Loaded</name></member>
+    <member refid="class_wpf_app1_1_1_main_window_1a64565a1bda9253ff280225ad48b6e84e" kind="function"><name>TextBox_TextChanged</name></member>
+    <member refid="class_wpf_app1_1_1_main_window_1a55037b31cee9030cb2fc90426fc8b88c" kind="function"><name>combobox26_MouseLeave</name></member>
+    <member refid="class_wpf_app1_1_1_main_window_1a751a114c3bb645cb60f0d7452255ec71" kind="function"><name>combobox26_LostStylusCapture</name></member>
+    <member refid="class_wpf_app1_1_1_main_window_1ae8bb6ebb38954cd9dac314b469d3d8c7" kind="function"><name>TextBox_TextChanged_1</name></member>
+    <member refid="class_wpf_app1_1_1_main_window_1a739fe76ecd96955e2a63dbded2629488" kind="function"><name>SaveName</name></member>
+    <member refid="class_wpf_app1_1_1_main_window_1a2e97ffb9064dd884345402f68639348f" kind="function"><name>MenuItem_Click</name></member>
+    <member refid="class_wpf_app1_1_1_main_window_1a9797b2809b1e693da2efe69ce3d48383" kind="function"><name>Save_Click</name></member>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_configuration" kind="namespace"><name>System::Configuration</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows" kind="namespace"><name>System::Windows</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_controls" kind="namespace"><name>System::Windows::Controls</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_data" kind="namespace"><name>System::Windows::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_documents" kind="namespace"><name>System::Windows::Documents</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_input" kind="namespace"><name>System::Windows::Input</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media" kind="namespace"><name>System::Windows::Media</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_media_1_1_imaging" kind="namespace"><name>System::Windows::Media::Imaging</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_navigation" kind="namespace"><name>System::Windows::Navigation</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_shapes" kind="namespace"><name>System::Windows::Shapes</name>
+  </compound>
+  <compound refid="namespace_word" kind="namespace"><name>Word</name>
+  </compound>
+  <compound refid="namespace_wpf_app1" kind="namespace"><name>WpfApp1</name>
+  </compound>
+  <compound refid="_app_8xaml_8cs" kind="file"><name>App.xaml.cs</name>
+  </compound>
+  <compound refid="_main_window_8xaml_8cs" kind="file"><name>MainWindow.xaml.cs</name>
+    <member refid="_main_window_8xaml_8cs_1af5f599cca0d0e6a4acae96e5525dfebc" kind="typedef"><name>Word</name></member>
+  </compound>
+</doxygenindex>

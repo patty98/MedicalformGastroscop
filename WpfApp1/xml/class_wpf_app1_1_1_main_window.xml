@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_wpf_app1_1_1_main_window" kind="class" language="C#" prot="public">
+    <compoundname>WpfApp1::MainWindow</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Window</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_wpf_app1_1_1_main_window_1a1dbb1f1495e83a995a38fc71ae6567d6" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string WpfApp1.MainWindow.name1</definition>
+        <argsstring></argsstring>
+        <name>name1</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="177" column="1" bodyfile="MainWindow.xaml.cs" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_wpf_app1_1_1_main_window_1aee7ad7ecea9c9aca9b23fb32a1cd1815" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string WpfApp1.MainWindow.path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <initializer>= Directory.GetCurrentDirectory()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="178" column="1" bodyfile="MainWindow.xaml.cs" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_wpf_app1_1_1_main_window_1aa3c6257e1760d1141664e45c9f49466e" prot="private" static="no" mutable="no">
+        <type>string []</type>
+        <definition>string [] WpfApp1.MainWindow.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <initializer>=new string[35]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="179" column="1" bodyfile="MainWindow.xaml.cs" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_wpf_app1_1_1_main_window_1a114e0acb9b0b6367f97f8bff016cc4ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WpfApp1.MainWindow.MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>MainWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="181" column="1" bodyfile="MainWindow.xaml.cs" bodystart="181" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_wpf_app1_1_1_main_window_1a01c77f36de42e71f9bba2b1645234b7e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WpfApp1.MainWindow.ComboBox_SelectionChanged</definition>
+        <argsstring>(object sender, SelectionChangedEventArgs e)</argsstring>
+        <name>ComboBox_SelectionChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>SelectionChangedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="188" column="1" bodyfile="MainWindow.xaml.cs" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wpf_app1_1_1_main_window_1aeef4d7ef90bf0cc49f852a933893e1e9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WpfApp1.MainWindow.Grid_Loaded</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>Grid_Loaded</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="193" column="1" bodyfile="MainWindow.xaml.cs" bodystart="193" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wpf_app1_1_1_main_window_1a6a70686ce82dc3be31813a52866d9c81" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WpfApp1.MainWindow.Data</definition>
+        <argsstring>()</argsstring>
+        <name>Data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="198" column="1" bodyfile="MainWindow.xaml.cs" bodystart="198" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wpf_app1_1_1_main_window_1a97f292f1c187c65108c7e57f12f38180" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WpfApp1.MainWindow.Window_Loaded</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>Window_Loaded</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="282" column="1" bodyfile="MainWindow.xaml.cs" bodystart="282" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wpf_app1_1_1_main_window_1a64565a1bda9253ff280225ad48b6e84e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WpfApp1.MainWindow.TextBox_TextChanged</definition>
+        <argsstring>(object sender, TextChangedEventArgs e)</argsstring>
+        <name>TextBox_TextChanged</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>TextChangedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="361" column="1" bodyfile="MainWindow.xaml.cs" bodystart="361" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wpf_app1_1_1_main_window_1a55037b31cee9030cb2fc90426fc8b88c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WpfApp1.MainWindow.combobox26_MouseLeave</definition>
+        <argsstring>(object sender, MouseEventArgs e)</argsstring>
+        <name>combobox26_MouseLeave</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>MouseEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="366" column="1" bodyfile="MainWindow.xaml.cs" bodystart="366" bodyend="370"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wpf_app1_1_1_main_window_1a751a114c3bb645cb60f0d7452255ec71" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WpfApp1.MainWindow.combobox26_LostStylusCapture</definition>
+        <argsstring>(object sender, StylusEventArgs e)</argsstring>
+        <name>combobox26_LostStylusCapture</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>StylusEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="372" column="1" bodyfile="MainWindow.xaml.cs" bodystart="372" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wpf_app1_1_1_main_window_1ae8bb6ebb38954cd9dac314b469d3d8c7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WpfApp1.MainWindow.TextBox_TextChanged_1</definition>
+        <argsstring>(object sender, TextChangedEventArgs e)</argsstring>
+        <name>TextBox_TextChanged_1</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>TextChangedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="377" column="1" bodyfile="MainWindow.xaml.cs" bodystart="377" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wpf_app1_1_1_main_window_1a739fe76ecd96955e2a63dbded2629488" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WpfApp1.MainWindow.SaveName</definition>
+        <argsstring>()</argsstring>
+        <name>SaveName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="386" column="1" bodyfile="MainWindow.xaml.cs" bodystart="386" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wpf_app1_1_1_main_window_1a2e97ffb9064dd884345402f68639348f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WpfApp1.MainWindow.MenuItem_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>MenuItem_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="397" column="1" bodyfile="MainWindow.xaml.cs" bodystart="397" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wpf_app1_1_1_main_window_1a9797b2809b1e693da2efe69ce3d48383" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void WpfApp1.MainWindow.Save_Click</definition>
+        <argsstring>(object sender, RoutedEventArgs e)</argsstring>
+        <name>Save_Click</name>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>RoutedEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MainWindow.xaml.cs" line="404" column="1" bodyfile="MainWindow.xaml.cs" bodystart="404" bodyend="458"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Класс <ref refid="class_wpf_app1_1_1_main_window" kindref="compound">MainWindow</ref> </para>    </briefdescription>
+    <detaileddescription>
+<para>Создаем глобальные переменные </para><para><linebreak/>
+ path строковая переменная для пути к файлу с именем врачей <linebreak/>
+ data[] массив для данных, введенных пользователем </para><para><ref refid="" kindref="compound">Data()</ref> Функция Data() для заполнения массива данныых data значениями из грида, котрые выбрал пользователь </para><para>i-счетчик <parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>Exeption ex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>возникает, когда человек не ввел все данные в ячейки </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><para><linebreak/>
+ Стандартная функция Window_Loaded, вызывающаяся, когда загружается окно <ref refid="class_wpf_app1_1_1_main_window" kindref="compound">MainWindow</ref> <linebreak/>
+ Добавляются вручную элементы в Combobox, котрые будут доступны для выбора пользователю <linebreak/>
+ Данные берем из советов опытного врача, они достоверны. <linebreak/>
+ Для сохранения и дальнейшего изменения имени врача в документе будет использвоать текстовый документ, в котором будут хранится Ф.И.О. врачей </para><para>Считывание с файла имя врача <linebreak/>
+ StreamReader sr = new StreamReader(fs); <linebreak/>
+ name1= sr.ReadLine(); <linebreak/>
+ if(String.IsNullOrEmpty(name1)||name1==&quot; &quot;!=true) </para><para>Считывание из файла имя врача</para><para><linebreak/>
+ name.Text = name1; <linebreak/>
+ name.IsEnabled = false;-При успешном считывании из файла делаем ячейку для ввода имени врача затемненной и без функционала <linebreak/>
+} <linebreak/>
+ else <linebreak/>
+ { <linebreak/>
+ name.IsEnabled = true;-При неуспешном считывании из файла делаем ячейку активной для ввода- <linebreak/>
+} .Close(); <linebreak/>
+} </para><para><linebreak/>
+ Функция TextBox_TextChanged_1( при активации текстовог поля для ввода имени врача </para><para><linebreak/>
+Данная функция сохраняет имя, введенное пользователем в ячейку в переменную name1 и вызывает дальше фнукцию для сохранения этого имени в файл. </para><para>Код функции выглядит следующим образом:<linebreak/>
+ private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)<linebreak/>
+ {<linebreak/>
+ if (String.IsNullOrEmpty(name1) || name1 == &quot; &quot; == true)<linebreak/>
+ {<linebreak/>
+ name1 = name.Text;<linebreak/>
+ SaveName();<linebreak/>
+ }<linebreak/>
+ }<linebreak/>
+ </para><para>Фнукция SaveName() сохранения мени врача в файл Данная функция реализует открытие файла, сохранение данных имени в файл и закрытие файла.<linebreak/>
+Код функции выглядит следующим образом:<linebreak/>
+ private void SaveName()<linebreak/>
+ {<linebreak/>
+ FileStream fr = new FileStream(path + &quot;\\namedoc.txt&quot;, FileMode.OpenOrCreate, FileAccess.Write);<linebreak/>
+ StreamWriter sw = new StreamWriter(fr);<linebreak/>
+ sw.WriteLine(name1);<linebreak/>
+ sw.Close(); <linebreak/>
+ }<linebreak/>
+ </para><para>Событие нажатия на меню MenuItem_Click<linebreak/>
+ </para><para>Активизирует ячейку для ввода имени врача, позволяя вписать другое имя<linebreak/>
+ </para><para>Код функции: </para><para>private void Save_Click(object sender, RoutedEventArgs e)<linebreak/>
+ {<linebreak/>
+ Data();<linebreak/>
+ Word.Document doc = null;<linebreak/>
+ try<linebreak/>
+ {<linebreak/>
+ Word.Application app = new Word.Application();<linebreak/>
+ string source = "D:\Doctor.docx";<linebreak/>
+ doc = app.Documents.Open(source);<linebreak/>
+doc.Activate();<linebreak/>
+ Word.Bookmarks wBookmarks = doc.Bookmarks;<linebreak/>
+ Word.Range wRange;<linebreak/>
+ int i = 0;<linebreak/>
+ foreach (Word.Bookmark mark in wBookmarks)<linebreak/>
+ {<linebreak/>
+ wRange = mark.Range;<linebreak/>
+ wRange.Text = data[i];<linebreak/>
+ i++;<linebreak/>
+ }<linebreak/>
+ Object fileName = "D:\&quot;+Patient.Text+&quot;.doc";<linebreak/>
+ Object fileFormat = Word.WdSaveFormat.wdFormatDocument;<linebreak/>
+Object lockComments = false;<linebreak/>
+ Object password = &quot;&quot;;<linebreak/>
+Object addToRecentFiles = false;<linebreak/>
+ Object writePassword = &quot;&quot;;<linebreak/>
+ Object readOnlyRecommended = false;<linebreak/>
+ Object embedTrueTypeFonts = false;<linebreak/>
+ Object saveNativePictureFormat = false;<linebreak/>
+ Object saveFormsData = false;<linebreak/>
+ Object saveAsAOCELetter = Type.Missing;<linebreak/>
+ Object encoding = Type.Missing;<linebreak/>
+ Object insertLineBreaks = Type.Missing;<linebreak/>
+ Object allowSubstitutions = Type.Missing;<linebreak/>
+ Object lineEnding = Type.Missing;<linebreak/>
+ Object addBiDiMarks = Type.Missing;<linebreak/>
+doc.SaveAs(ref fileName,<linebreak/>
+ ref fileFormat, ref lockComments,<linebreak/>
+ ref password, ref addToRecentFiles, ref writePassword,<linebreak/>
+ ref readOnlyRecommended, ref embedTrueTypeFonts,<linebreak/>
+ref saveNativePictureFormat, ref saveFormsData,<linebreak/>
+ ref saveAsAOCELetter, ref encoding, ref insertLineBreaks,<linebreak/>
+ ref allowSubstitutions, ref lineEnding, ref addBiDiMarks);<linebreak/>
+ doc.Close();<linebreak/>
+ doc = null;<linebreak/>
+ }<linebreak/>
+ catch (Exception ex)<linebreak/>
+ {<linebreak/>
+doc.Close();<linebreak/>
+ doc = null;<linebreak/>
+ Console.WriteLine(&quot;Во время выполнения произошла ошибка!&quot;);<linebreak/>
+ Console.ReadLine();<linebreak/>
+ }<linebreak/>
+ </para><para>Функция Save_Click вызывается по щелчку на кнопку Save в окнце документа<linebreak/>
+Сораняет данные, выбранные пользователем в документ Microsoft Word<linebreak/>
+1.Вызывает фнукцию Data() для сохранения всех введенных пользователем данных в массив data[].<linebreak/>
+2.Создает экземпляр Word.Document doc<linebreak/>
+3.Создает объект приложения Word.Application app = new Word.Application()<linebreak/>
+4.Открывает документ из введенной директории<linebreak/>
+5.Создает объект wBookmarks, который содержит все закладки<linebreak/>
+6.В цикле присваивает каждой закладке текст из массива данных пользваотеля data[]<linebreak/>
+7.Сохраняем в документ новый, именуем его Ф.И.О. пациента<linebreak/>
+8.Закрываем документ<linebreak/>
+ </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>Window</label>
+      </node>
+      <node id="4">
+        <label>WpfApp1.MainWindow</label>
+        <link refid="class_wpf_app1_1_1_main_window"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>Window</label>
+      </node>
+      <node id="6">
+        <label>WpfApp1.MainWindow</label>
+        <link refid="class_wpf_app1_1_1_main_window"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="MainWindow.xaml.cs" line="176" column="1" bodyfile="MainWindow.xaml.cs" bodystart="175" bodyend="459"/>
+    <listofallmembers>
+      <member refid="class_wpf_app1_1_1_main_window_1a751a114c3bb645cb60f0d7452255ec71" prot="private" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>combobox26_LostStylusCapture</name></member>
+      <member refid="class_wpf_app1_1_1_main_window_1a55037b31cee9030cb2fc90426fc8b88c" prot="private" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>combobox26_MouseLeave</name></member>
+      <member refid="class_wpf_app1_1_1_main_window_1a01c77f36de42e71f9bba2b1645234b7e" prot="private" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>ComboBox_SelectionChanged</name></member>
+      <member refid="class_wpf_app1_1_1_main_window_1aa3c6257e1760d1141664e45c9f49466e" prot="private" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>data</name></member>
+      <member refid="class_wpf_app1_1_1_main_window_1a6a70686ce82dc3be31813a52866d9c81" prot="private" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>Data</name></member>
+      <member refid="class_wpf_app1_1_1_main_window_1aeef4d7ef90bf0cc49f852a933893e1e9" prot="private" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>Grid_Loaded</name></member>
+      <member refid="class_wpf_app1_1_1_main_window_1a114e0acb9b0b6367f97f8bff016cc4ac" prot="public" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>MainWindow</name></member>
+      <member refid="class_wpf_app1_1_1_main_window_1a2e97ffb9064dd884345402f68639348f" prot="private" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>MenuItem_Click</name></member>
+      <member refid="class_wpf_app1_1_1_main_window_1a1dbb1f1495e83a995a38fc71ae6567d6" prot="private" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>name1</name></member>
+      <member refid="class_wpf_app1_1_1_main_window_1aee7ad7ecea9c9aca9b23fb32a1cd1815" prot="private" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>path</name></member>
+      <member refid="class_wpf_app1_1_1_main_window_1a9797b2809b1e693da2efe69ce3d48383" prot="private" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>Save_Click</name></member>
+      <member refid="class_wpf_app1_1_1_main_window_1a739fe76ecd96955e2a63dbded2629488" prot="private" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>SaveName</name></member>
+      <member refid="class_wpf_app1_1_1_main_window_1a64565a1bda9253ff280225ad48b6e84e" prot="private" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>TextBox_TextChanged</name></member>
+      <member refid="class_wpf_app1_1_1_main_window_1ae8bb6ebb38954cd9dac314b469d3d8c7" prot="private" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>TextBox_TextChanged_1</name></member>
+      <member refid="class_wpf_app1_1_1_main_window_1a97f292f1c187c65108c7e57f12f38180" prot="private" virt="non-virtual"><scope>WpfApp1::MainWindow</scope><name>Window_Loaded</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

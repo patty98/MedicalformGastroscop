@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\гид\MedicalformGastroscop\WpfApp1\obj\Debug\
+D:\гид\Medspace\MedicalformGastroscop\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-D:\гид\MedicalformGastroscop\WpfApp1\App.xaml
-11151548125
+D:\гид\Medspace\MedicalformGastroscop\WpfApp1\App.xaml
+2462529049
 
-9-1489782314
+10-816415018
 171673692451
-MainWindow.xaml;
+MainWindow.xaml;Window1.xaml;
 
-True
+False
 

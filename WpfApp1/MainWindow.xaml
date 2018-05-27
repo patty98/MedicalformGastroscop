@@ -11,14 +11,15 @@
             <Menu Height="25" VerticalAlignment="Top">
                 <MenuItem Header="File">
                     <MenuItem Header="Изменить Ф.И.О. врача" Click="MenuItem_Click" ></MenuItem>
-                  
-                    <MenuItem Header="Exit" ></MenuItem>
+
+                    <MenuItem Header="Exit" Click="Exit_Click" ></MenuItem>
                 </MenuItem>
-                <MenuItem Header="Edit" ></MenuItem>
+                <MenuItem Header="Edit" Click="MenuItem_Click_1" ></MenuItem>
             </Menu>
+            
             <TextBox HorizontalAlignment="Left" Height="60" Margin="297,35,0,0" TextWrapping="Wrap" Text="Эзофагогастродуоденоскопия" VerticalAlignment="Top" Width="477" FontSize="24" FontWeight="Bold"/>
             <Label Name="Machine" Content="Аппарат" HorizontalAlignment="Left" Margin="30,164,0,0" VerticalAlignment="Top" Width="140" FontSize="20"/>
-            <ComboBox x:Name="combobox1"  HorizontalAlignment="Left" Margin="242,178,0,0" VerticalAlignment="Top" Width="669" Height="35" SelectionChanged="ComboBox_SelectionChanged"/>
+            <ComboBox x:Name="combobox1"  HorizontalAlignment="Left"  Margin="242,178,0,0" VerticalAlignment="Top" Width="669" Height="35" SelectionChanged="ComboBox_SelectionChanged"/>
             <TextBox Name="Patient" HorizontalAlignment="Left" Height="45" Margin="251,228,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="528" RenderTransformOrigin="0.5,0.5">
                 <TextBox.RenderTransform>
                     <TransformGroup>
@@ -49,7 +50,7 @@
             <Label Content="Описание:" HorizontalAlignment="Left" Margin="38,518,0,0" VerticalAlignment="Top" Width="467" FontWeight="Bold"/>
             <Label Content="Пищевод" HorizontalAlignment="Left" Margin="332,565,0,0" VerticalAlignment="Top" Width="173" Height="48" RenderTransformOrigin="0.593,0.399"/>
             <Label Content="Пищевод" HorizontalAlignment="Left" Margin="39,645,0,0" VerticalAlignment="Top" FontSize="16" Width="209"/>
-            <ComboBox x:Name="combobox3" HorizontalAlignment="Left" Margin="202,636,0,0" VerticalAlignment="Top" Width="198" Height="35"/>
+            <ComboBox x:Name="combobox3" HorizontalAlignment="Left"  Margin="202,636,0,0" VerticalAlignment="Top" Width="198" Height="35"/>
             <Label Content="Стенки" HorizontalAlignment="Left" Margin="39,712,0,0" VerticalAlignment="Top" FontSize="16" Width="76"/>
             <ComboBox x:Name="combobox4" HorizontalAlignment="Left" Margin="202,712,0,0" VerticalAlignment="Top" Width="198" Height="35"/>
             <Label Content="Слизистая" HorizontalAlignment="Left" Margin="40,773,0,0" VerticalAlignment="Top" FontSize="16"/>
